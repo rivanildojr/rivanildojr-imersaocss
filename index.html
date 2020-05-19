@@ -5,58 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rivanildo Júnior</title>
     <link rel="stylesheet" href="css/estilos.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/829346abdf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav class="menu">
         <ul>
           <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#portifolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="titulo">
         <h1 class="site-title">Rivanildo Júnior</h1>
         <h2 class="site-subtitle">Web Developer</h2>
       </div>
     </header>
     <!--fim do header-->
 
-    <section>
+    <section class="portifolio" id="portifolio">
       <h2>Portfólio</h2>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-          alt="eCommerce"
-        />
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="./img/mobile-creditos-nate-grant-unsplash.jpg"
-          alt=">Mobile"
-        />
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
-          alt="Web design"
-        />
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-          alt="Projetos pessoais"
-        />
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
+
+      <div class="grid">
+        <figure>
+          <img
+            class="img-portfolio"
+            src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+            alt="eCommerce"
+          />
+          <figcaption>eCommerce</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img-portfolio"
+            src="./img/mobile-creditos-nate-grant-unsplash.jpg"
+            alt=">Mobile"
+          />
+          <figcaption>Mobile</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img-portfolio"
+            src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
+            alt="Web design"
+          />
+          <figcaption>Web design</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img-portfolio"
+            src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+            alt="Projetos pessoais"
+          />
+          <figcaption>Projetos pessoais</figcaption>
+        </figure>
+      </div>
     </section>
     <!--fim da section do portifolio-->
+    <section class="contato" id="contato">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/rivanildojr">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/RivanildoJr7">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/rivanildojunior">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:vanessa.tonini@caelum.com.br">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://instagram.com/rivasjr77">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <!--fim da section do contato-->
   </body>
 </html>
