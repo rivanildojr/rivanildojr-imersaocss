@@ -5,8 +5,11 @@
 }
 
 body {
-  background-image: url("../img/fundo.jpg");
-  background-size: auto 100vh;
+  background: url("../img/fundo.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
@@ -75,6 +78,8 @@ a:hover {
 .site-title {
   color: whitesmoke;
   text-align: center;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .site-title {
@@ -89,18 +94,42 @@ a:hover {
   line-height: 1.8em;
 }
 
+.sobre,
 .portifolio {
   padding: 2em;
   min-height: 100vh;
+}
+
+.sobre {
   text-align: center;
 }
 
+.sobre .avatar img {
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  color: whitesmoke;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.sobre a {
+  color: cyan;
+}
+
+.sobre h2,
 .contato h2,
 .portifolio h2 {
   font-family: "Press Start 2P", cursive;
   font-size: 2em;
   margin-bottom: 1.5em;
   color: whitesmoke;
+  text-align: center;
 }
 
 .portifolio .grid {
@@ -116,7 +145,7 @@ a:hover {
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: left bottom;
   border-radius: 5px;
@@ -124,7 +153,13 @@ a:hover {
 }
 
 .img-portfolio:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.portifolio figcaption {
+  color: whitesmoke;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .contato {
@@ -163,16 +198,33 @@ a:hover {
   body {
     font-size: 18px;
   }
+
+  .sobre .avatar img {
+    float: right;
+    margin-left: 1em;
+  }
 }
 
-@media (min-width: 1200px) {
-  body {
-    font-size: 22px;
+@media (min-width: 800px) {
+  .sobre .avatar img {
+    height: 400px;
+    width: 450px;
   }
 }
 
 @media (min-width: 880px) {
   .portifolio .grid {
     grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
