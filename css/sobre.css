@@ -1,0 +1,49 @@
+.sobre {
+  padding: 2em;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+.sobre {
+  text-align: center;
+}
+
+.sobre .avatar img {
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  color: whitesmoke;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.sobre a {
+  color: cyan;
+}
+
+.sobre h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: whitesmoke;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .sobre .avatar img {
+    float: right;
+    margin-left: 1em;
+  }
+}
+
+@media (min-width: 800px) {
+  .sobre .avatar img {
+    height: 400px;
+    width: 450px;
+  }
+}
